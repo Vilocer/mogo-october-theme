@@ -1,0 +1,699 @@
+title = "Mogo homepage"
+url = "/"
+layout = "default"
+meta_title = "Home page"
+meta_description = "desc"
+is_hidden = 0
+seo_keywords = "keywords"
+robot_index = "index"
+robot_follow = "follow"
+
+[contenteditor]
+file = "intro/title.htm"
+==
+<!-- Main -->
+<main>
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                {% component 'contenteditor' file='intro/suptitle.htm' fixture='h2' class="intro__suptitle" %}
+                {% component 'contenteditor' file='intro/title.htm' fixture='h1' class="intro__title" %}
+                <a class="btn" href="#" >Learn More</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__item active">
+                        <span class="slider__num">01</span> <span class="slider__text">Intro</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">02</span> <span class="slider__text">Work</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">03</span> <span class="slider__text">About</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">04</span> <span class="slider__text">Contact</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Intro-->
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">What we do</h2>
+                <h1 class="section__title">Story About Us</h1>
+                <p class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="section__body">
+
+                {% partial 'about' %}
+                
+            </div>
+        </div> <!-- container -->
+    </section> <!-- /About -->
+
+    <!-- Statistic -->
+    <div class="statistics">
+        <div class="container">
+            <div class="stat">
+                <div class="stat__item">
+                    <h1 class="stat__count">42</h1>
+                    <p class="stat__title">Web Design Projects</p>
+                </div>
+                <div class="stat__item">
+                    <h1 class="stat__count">123</h1>
+                    <p class="stat__title">Happy Client</p>
+                </div>
+                <div class="stat__item">
+                    <h1 class="stat__count">15</h1>
+                    <p class="stat__title">Award Winner</p>
+                </div>
+                <div class="stat__item">
+                    <h1 class="stat__count">99</h1>
+                    <p class="stat__title">Cup of Coffe</p>
+                </div>
+                <div class="stat__item">
+                    <h1 class="stat__count">24</h1>
+                    <p class="stat__title">Members</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Statistic -->
+
+    <!-- Services -->
+    <section class="section" id="service">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">We work with</h2>
+                <h1 class="section__title">Amazing Services</h1>
+            </div>
+            <div class="services">
+                <div class="services__item services__item--border">
+                    <div class="services__icon">
+                        <img src="{{ 'assets/img/services/clock.png'|theme }}" alt="Photography">
+                    </div>
+                    <div class="service__title">
+                        Photography
+                    </div>
+                    <div class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+                <div class="services__item services__item--border">
+                    <div class="services__icon">
+                        <img src="{{ 'assets/img/services/progress.png'|theme }}" alt="Photography">
+                    </div>
+                    <div class="service__title">
+                        Web Design
+                    </div>
+                    <div class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+                <div class="services__item services__item--border">
+                    <div class="services__icon">
+                        <img src="{{ 'assets/img/services/pc.png'|theme }}" alt="Photography">
+                    </div>
+                    <div class="service__title">
+                        Creativity
+                    </div>
+                    <div class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="{{ 'assets/img/services/book.png'|theme }}" alt="Photography">
+                    </div>
+                    <div class="service__title">
+                        SEO
+                    </div>
+                    <div class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="{{ 'assets/img/services/home.png'|theme }}" alt="Photography">
+                    </div>
+                    <div class="service__title">
+                        CSS/HTML
+                    </div>
+                    <div class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="{{ 'assets/img/services/screen.png'|theme }}" alt="Photography">
+                    </div>
+                    <div class="service__title">
+                        DIGITAL
+                    </div>
+                    <div class="services__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </div>
+                </div>
+            </div>
+        </div> <!--  Container -->
+    </section> <!-- /Services -->
+
+    <!-- Devices -->
+    <section class="section section--devices">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">For all devices</h2>
+                <h1 class="section__title">Unique design</h1>
+            </div>
+            <div class="devices">
+                <img class="devices__item" src="{{ 'assets/img/design/ipad.png'|theme }}" alt="Mogo Ipad">
+                <img class="devices__item devices__item--iphone" src="{{ 'assets/img/design/iphone.png'|theme }}" alt="Mogo Ipad">
+            </div>
+        </div>
+    </section> <!-- /Devices -->
+
+    <!-- We Do -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">Service</h2>
+                <h1 class="section__title">What we do</h1>
+                <p class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="wedo">
+                <div class="wedo__item">
+                    <img class="wedo_image" src="{{ 'assets/img/wedo/picture.jpg'|theme }}" alt="Mogo Picture">
+                </div>
+                <div class="wedo__item">
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <div class="accordion__header" data-collapse="#accordion1">
+                                <div class="accordion__icon">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="30px" height="30px">
+                                        <path fill-rule="evenodd"  fill="rgb(149, 225, 211)"
+                                        d="M30.000,23.999 C30.000,24.650 29.581,25.199 29.000,25.406 L29.000,27.089 C29.581,27.296 30.000,27.846 30.000,28.498 C30.000,29.326 29.328,29.999 28.500,29.999 C27.848,29.999 27.298,29.579 27.092,28.998 L25.408,28.998 C25.201,29.579 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.579 22.592,28.998 L20.908,28.998 C20.701,29.579 20.152,29.999 19.500,29.999 C18.848,29.999 18.299,29.579 18.092,28.998 L16.408,28.998 C16.201,29.579 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.579 13.592,28.998 L11.908,28.998 C11.702,29.579 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.579 9.092,28.998 L7.408,28.998 C7.202,29.579 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.579 4.592,28.998 L2.908,28.998 C2.701,29.579 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.326 -0.000,28.498 C-0.000,27.846 0.419,27.296 1.000,27.089 L1.000,25.406 C0.419,25.199 -0.000,24.650 -0.000,23.999 C-0.000,23.345 0.419,22.797 1.000,22.590 L1.000,20.907 C0.419,20.699 -0.000,20.150 -0.000,19.498 C-0.000,18.847 0.419,18.297 1.000,18.090 L1.000,16.406 C0.419,16.200 -0.000,15.651 -0.000,14.999 C-0.000,14.347 0.419,13.797 1.000,13.589 L1.000,11.906 C0.419,11.700 -0.000,11.151 -0.000,10.498 C-0.000,9.846 0.419,9.296 1.000,9.091 L1.000,7.406 C0.419,7.199 -0.000,6.650 -0.000,5.998 C-0.000,5.346 0.419,4.796 1.000,4.590 L1.000,2.905 C0.419,2.700 -0.000,2.150 -0.000,1.498 C-0.000,0.669 0.672,-0.001 1.500,-0.001 C2.152,-0.001 2.701,0.416 2.908,0.999 L4.592,0.999 C4.798,0.416 5.348,-0.001 6.000,-0.001 C6.652,-0.001 7.202,0.416 7.408,0.999 L9.092,0.999 C9.298,0.416 9.848,-0.001 10.500,-0.001 C11.152,-0.001 11.702,0.416 11.908,0.999 L13.592,0.999 C13.798,0.416 14.348,-0.001 15.000,-0.001 C15.652,-0.001 16.201,0.416 16.408,0.999 L18.092,0.999 C18.299,0.416 18.848,-0.001 19.500,-0.001 C20.152,-0.001 20.701,0.416 20.908,0.999 L22.592,0.999 C22.798,0.416 23.348,-0.001 24.000,-0.001 C24.652,-0.001 25.201,0.416 25.408,0.999 L27.092,0.999 C27.298,0.416 27.848,-0.001 28.500,-0.001 C29.328,-0.001 30.000,0.669 30.000,1.498 C30.000,2.150 29.581,2.700 29.000,2.905 L29.000,4.590 C29.581,4.796 30.000,5.346 30.000,5.998 C30.000,6.650 29.581,7.199 29.000,7.406 L29.000,9.091 C29.581,9.296 30.000,9.846 30.000,10.498 C30.000,11.151 29.581,11.700 29.000,11.906 L29.000,13.589 C29.581,13.797 30.000,14.347 30.000,14.999 C30.000,15.651 29.581,16.200 29.000,16.406 L29.000,18.090 C29.581,18.297 30.000,18.847 30.000,19.498 C30.000,20.150 29.581,20.699 29.000,20.907 L29.000,22.590 C29.581,22.797 30.000,23.345 30.000,23.999 ZM26.000,3.997 L4.000,3.997 L4.000,25.998 L26.000,25.998 L26.000,3.997 ZM13.000,19.998 L20.000,11.499 L24.500,18.499 L24.500,24.498 L5.500,24.498 L11.500,18.499 L13.000,19.998 ZM10.000,12.998 C8.343,12.998 7.000,11.655 7.000,9.997 C7.000,8.340 8.343,6.998 10.000,6.998 C11.657,6.998 13.000,8.340 13.000,9.997 C13.000,11.655 11.657,12.998 10.000,12.998 Z"/>
+                                    </svg>
+                                </div>
+                                <div class="accordion__title">
+                                    Photography
+                                </div>
+                            </div>
+                            <div class="accordion__content" id="#accordion1">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header" data-collapse="#accordion2">
+                                <div class="accordion__icon">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="28px" height="32px">
+                                        <path fill-rule="evenodd"  fill="rgb(149, 225, 211)"
+                                        d="M26.500,16.497 L23.500,16.497 C22.672,16.497 22.000,15.827 22.000,14.998 L22.000,8.998 C22.000,8.170 22.672,7.499 23.500,7.499 L26.500,7.499 C27.328,7.499 28.000,8.170 28.000,8.998 L28.000,14.998 C28.000,15.827 27.328,16.497 26.500,16.497 ZM23.500,1.497 C23.500,0.669 24.172,-0.002 25.000,-0.002 C25.828,-0.002 26.500,0.669 26.500,1.497 L26.500,5.998 L23.500,5.998 L23.500,1.497 ZM15.500,24.497 L12.500,24.497 C11.672,24.497 11.000,23.827 11.000,22.998 L11.000,16.998 C11.000,16.170 11.672,15.498 12.500,15.498 L15.500,15.498 C16.328,15.498 17.000,16.170 17.000,16.998 L17.000,22.998 C17.000,23.827 16.328,24.497 15.500,24.497 ZM12.500,1.497 C12.500,0.669 13.172,-0.002 14.000,-0.002 C14.828,-0.002 15.500,0.669 15.500,1.497 L15.500,13.998 L12.500,13.998 L12.500,1.497 ZM4.500,20.498 L1.500,20.498 C0.672,20.498 -0.000,19.826 -0.000,18.997 L-0.000,12.997 C-0.000,12.169 0.672,11.498 1.500,11.498 L4.500,11.498 C5.328,11.498 6.000,12.169 6.000,12.997 L6.000,18.997 C6.000,19.826 5.328,20.498 4.500,20.498 ZM1.500,1.497 C1.500,0.669 2.172,-0.002 3.000,-0.002 C3.828,-0.002 4.500,0.669 4.500,1.497 L4.500,9.999 L1.500,9.999 L1.500,1.497 ZM4.500,30.497 C4.500,31.326 3.828,31.998 3.000,31.998 C2.172,31.998 1.500,31.326 1.500,30.497 L1.500,21.998 L4.500,21.998 L4.500,30.497 ZM15.500,30.497 C15.500,31.326 14.828,31.998 14.000,31.998 C13.172,31.998 12.500,31.326 12.500,30.497 L12.500,25.997 L15.500,25.997 L15.500,30.497 ZM26.500,30.497 C26.500,31.326 25.828,31.998 25.000,31.998 C24.172,31.998 23.500,31.326 23.500,30.497 L23.500,17.999 L26.500,17.999 L26.500,30.497 Z"/>
+                                    </svg>
+                                </div>
+                                <div class="accordion__title">
+                                    Creativy
+                                </div>
+                            </div>
+                            <div class="accordion__content" id="#accordion2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__header" data-collapse="#accordion3">
+                                <div class="accordion__icon">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="32px" height="32px">
+                                    <path fill-rule="evenodd"  fill="rgb(149, 225, 211)"
+                                        d="M16.000,31.998 C7.164,31.998 -0.000,24.835 -0.000,15.997 C-0.000,7.162 7.164,-0.002 16.000,-0.002 C24.837,-0.002 32.000,7.162 32.000,15.997 C32.000,24.835 24.837,31.998 16.000,31.998 ZM16.000,2.998 C8.820,2.998 3.000,8.818 3.000,15.997 C3.000,23.177 8.820,28.998 16.000,28.998 C23.180,28.998 29.000,23.177 29.000,15.997 C29.000,8.818 23.180,2.998 16.000,2.998 ZM16.000,25.497 C10.753,25.497 6.500,21.244 6.500,15.997 C6.500,10.752 10.753,6.498 16.000,6.498 C21.247,6.498 25.500,10.752 25.500,15.997 C25.500,21.244 21.247,25.497 16.000,25.497 ZM16.000,9.498 C12.410,9.498 9.500,12.408 9.500,15.997 C9.500,19.587 12.410,22.499 16.000,22.499 C19.590,22.499 22.500,19.587 22.500,15.997 C22.500,12.408 19.590,9.498 16.000,9.498 ZM16.000,18.999 C14.343,18.999 13.000,17.655 13.000,15.997 C13.000,14.341 14.343,12.999 16.000,12.999 C17.657,12.999 19.000,14.341 19.000,15.997 C19.000,17.655 17.657,18.999 16.000,18.999 Z"/>
+                                </svg>
+                                </div>
+                                <div class="accordion__title">
+                                    Web design
+                                </div>
+                            </div>
+                            <div class="accordion__content" id="#accordion3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- We Do -->
+        </div> <!-- Container -->
+    </section> <!-- /We Do -->
+
+    <!-- Reviews  -->
+    <div class="section section--grey">
+        <div class="container">
+            <div class="reviews">
+                <div class="reviews__item">
+                    <a class="reviews__btn reviews__btn--prev" href="#">prev</a>
+                    <a class="reviews__btn reviews__btn--next" href="#">next</a>
+                    <img class="reviews__photo" src="assets/img/reviews/comment_icon.png" alt="MoGO Photo">
+                    <div class="reviews__text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                    </div>
+                    <div class="reviews__author">
+                        Jon Doe
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Reviews  -->
+
+    <!-- Team -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">Who we are</h2>
+                <h1 class="section__title">Meet our team</h1>
+                <p class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="section__body">
+                <div class="team">
+                    <div class="team__item">
+                        <div class="team__content">
+                            <div class="team__image">	
+                                <img src="{{ 'assets/img/team/1.jpg'|theme }}" alt="Mogo Team">
+                                <div class="team__share">
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-pinterest fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__text">
+                            <div class="team__name">Matthew Dix</div>
+                            <div class="team__role">Graphic Design</div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__content">
+                            <div class="team__image">	
+                                <img src="{{ 'assets/img/team/2.jpg'|theme }}" alt="Mogo Team">
+                                <div class="team__share">
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-pinterest fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__text">
+                            <div class="team__name">Christopher Campbell</div>
+                            <div class="team__role">Branding/UX design</div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__content">
+                            <div class="team__image">	
+                                <img src="{{ 'assets/img/team/3.jpg'|theme }}" alt="Mogo Team">
+                                <div class="team__share">
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-pinterest fa-lg"></i></a>
+                                    <a href="#" class="team__icon" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__text">
+                            <div class="team__name">Michael Fertig </div>
+                            <div class="team__role">Developer</div>
+                        </div>
+                    </div>
+                </div> <!-- Team -->
+            </div> <!-- Section Body -->
+        </div> <!-- Container -->
+    </section> <!-- /Team -->
+
+    <!-- Logos -->
+    <div class="section section--grey">
+        <div class="container">		
+            <div class="logos">
+                <div class="logos__item">
+                    <img src="{{ 'assets/img/logos/1.png'|theme }}" alt="Mogo Logo">
+                </div>
+                <div class="logos__item">
+                    <img src="{{ 'assets/img/logos/2.png'|theme }}" alt="Mogo Logo">
+                </div>
+                <div class="logos__item">
+                    <img src="{{ 'assets/img/logos/3.png'|theme }}" alt="Mogo Logo">
+                </div>
+                <div class="logos__item">
+                    <img src="{{ 'assets/img/logos/4.png'|theme }}" alt="Mogo Logo">
+                </div>
+                <div class="logos__item">
+                    <img src="{{ 'assets/img/logos/5.png'|theme }}" alt="Mogo Logo">
+                </div>
+                <div class="logos__item">
+                    <img src="{{ 'assets/img/logos/6.png'|theme }}" alt="Mogo Logo">
+                </div>
+            </div>
+        </div>
+    </div> <!-- /Logos -->
+
+    <!-- Works -->
+    <section class="section" id="work">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">What we do</h2>
+                <h1 class="section__title">Some of our work</h1>
+                <p class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <div class="works">
+            <div class="works__col">
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/1.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/2.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- works__col-->
+            <div class="works__col">
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/3.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/4.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- works__col-->
+            <div class="works__col">
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/5.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- works__col-->
+            <div class="works__col">
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/6.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <div class="works__image">
+                        <img src="{{ 'assets/img/works/7.jpg'|theme }}" alt="Mogo Work Image">
+                    </div>
+                    <div class="works__info">
+                        <div class="works__icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M30.000,23.999 C30.000,24.652 29.581,25.201 29.000,25.408 L29.000,27.091 C29.581,27.298 30.000,27.848 30.000,28.500 C30.000,29.328 29.328,29.999 28.500,29.999 C27.848,29.999 27.299,29.581 27.092,29.000 L25.408,29.000 C25.201,29.581 24.652,29.999 24.000,29.999 C23.348,29.999 22.798,29.581 22.592,29.000 L20.908,29.000 C20.701,29.581 20.152,29.999 19.500,29.999 C18.848,29.999 18.298,29.581 18.092,29.000 L16.408,29.000 C16.202,29.581 15.652,29.999 15.000,29.999 C14.348,29.999 13.798,29.581 13.592,29.000 L11.908,29.000 C11.701,29.581 11.152,29.999 10.500,29.999 C9.848,29.999 9.298,29.581 9.092,29.000 L7.408,29.000 C7.202,29.581 6.652,29.999 6.000,29.999 C5.348,29.999 4.798,29.581 4.592,29.000 L2.908,29.000 C2.701,29.581 2.152,29.999 1.500,29.999 C0.672,29.999 -0.000,29.328 -0.000,28.500 C-0.000,27.848 0.419,27.298 1.000,27.091 L1.000,25.408 C0.419,25.201 -0.000,24.652 -0.000,23.999 C-0.000,23.347 0.419,22.798 1.000,22.592 L1.000,20.908 C0.419,20.701 -0.000,20.151 -0.000,19.500 C-0.000,18.848 0.419,18.298 1.000,18.091 L1.000,16.408 C0.419,16.201 -0.000,15.652 -0.000,15.000 C-0.000,14.347 0.419,13.798 1.000,13.591 L1.000,11.907 C0.419,11.701 -0.000,11.152 -0.000,10.500 C-0.000,9.848 0.419,9.298 1.000,9.092 L1.000,7.408 C0.419,7.201 -0.000,6.652 -0.000,5.999 C-0.000,5.347 0.419,4.798 1.000,4.592 L1.000,2.908 C0.419,2.701 -0.000,2.151 -0.000,1.500 C-0.000,0.671 0.672,-0.000 1.500,-0.000 C2.152,-0.000 2.701,0.418 2.908,0.999 L4.592,0.999 C4.798,0.418 5.348,-0.000 6.000,-0.000 C6.652,-0.000 7.202,0.418 7.408,0.999 L9.092,0.999 C9.298,0.418 9.848,-0.000 10.500,-0.000 C11.152,-0.000 11.701,0.418 11.908,0.999 L13.592,0.999 C13.798,0.418 14.348,-0.000 15.000,-0.000 C15.652,-0.000 16.202,0.418 16.408,0.999 L18.092,0.999 C18.298,0.418 18.848,-0.000 19.500,-0.000 C20.152,-0.000 20.701,0.418 20.908,0.999 L22.592,0.999 C22.798,0.418 23.348,-0.000 24.000,-0.000 C24.652,-0.000 25.201,0.418 25.408,0.999 L27.092,0.999 C27.299,0.418 27.848,-0.000 28.500,-0.000 C29.328,-0.000 30.000,0.671 30.000,1.500 C30.000,2.151 29.581,2.701 29.000,2.908 L29.000,4.592 C29.581,4.798 30.000,5.347 30.000,5.999 C30.000,6.652 29.581,7.201 29.000,7.408 L29.000,9.092 C29.581,9.298 30.000,9.848 30.000,10.500 C30.000,11.152 29.581,11.701 29.000,11.907 L29.000,13.591 C29.581,13.798 30.000,14.347 30.000,15.000 C30.000,15.652 29.581,16.201 29.000,16.408 L29.000,18.091 C29.581,18.298 30.000,18.848 30.000,19.500 C30.000,20.151 29.581,20.701 29.000,20.908 L29.000,22.592 C29.581,22.798 30.000,23.347 30.000,23.999 ZM26.000,3.999 L4.000,3.999 L4.000,26.000 L26.000,26.000 L26.000,3.999 ZM13.000,20.000 L20.000,11.500 L24.500,18.499 L24.500,24.500 L5.500,24.500 L11.500,18.499 L13.000,20.000 ZM10.000,12.999 C8.343,12.999 7.000,11.657 7.000,10.000 C7.000,8.343 8.343,7.000 10.000,7.000 C11.657,7.000 13.000,8.343 13.000,10.000 C13.000,11.657 11.657,12.999 10.000,12.999 Z"/>
+                            </svg>
+                        </div>
+                        <div class="works__title">
+                            creatively designed
+                        </div>
+                        <div class="works__text">
+                            Lorem ipsum dolor sit
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- works__col-->
+        </div> <!-- Works-->
+        <div class="container">
+            <div class="reviews">
+                <div class="reviews__item reviews__item--avatar">
+                    <a class="reviews__btn reviews__btn--prev" href="#">prev</a>
+                    <a class="reviews__btn reviews__btn--next" href="#">next</a>
+                    <img class="reviews__photo reviews__photo--avatar" src="assets/img/works/review_photo.png" alt="MoGO Photo">
+                    <div class="reviews__text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                    </div>
+                    <div class="reviews__author">
+                        Joshua Earle
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /Works -->
+
+    <!-- Clients -->
+    <section class="section section--clients">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">Happy Clients</h2>
+                <h1 class="section__title">What people say</h1>
+                <p class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="section__body">
+                <div class="clients">	
+                    <div class="clients__inner">
+                        <div class="clients__item">
+                            <img src="{{ 'assets/img/clients/1.png'|theme }}" alt="MoGO Client" class="clients__image">
+                            <div class="clients__info">
+                                <div class="clients__name">
+                                    Matthew Dix
+                                </div>
+                                <div class="clients__role">
+                                    Graphic Design
+                                </div>
+                                <div class="clients__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__item">
+                            <img src="{{ 'assets/img/clients/2.png'|theme }} alt="MoGO Client" class="clients__image">
+                            <div class="clients__info">
+                                <div class="clients__name">
+                                    Nick Karvounis
+                                </div>
+                                <div class="clients__role">
+                                    Graphic Design
+                                </div>
+                                <div class="clients__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Clients inner-->
+                    <div class="clients__inner">
+                        <div class="clients__item">
+                            <img src="{{ 'assets/img/clients/3.png'|theme }}" alt="MoGO Client" class="clients__image">
+                            <div class="clients__info">
+                                <div class="clients__name">
+                                    Jaelynn Castillo
+                                </div>
+                                <div class="clients__role">
+                                    Graphic Design
+                                </div>
+                                <div class="clients__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__item">
+                            <img src="{{ 'assets/img/clients/4.png'|theme }}" alt="MoGO Client" class="clients__image">
+                            <div class="clients__info">
+                                <div class="clients__name">
+                                    Mike Petrucci
+                                </div>
+                                <div class="clients__role">
+                                    Graphic Design
+                                </div>
+                                <div class="clients__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Clients inner-->
+                </div> <!-- Clients-->
+            </div> <!-- Section body -->
+        </div> <!-- Container-->
+    </section> <!-- /Clients -->
+
+    <!-- Blog -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__suptitle">Our stories</h2>
+                <h1 class="section__title">Latest blog</h1>
+            </div>
+            <div class="section__body">
+                
+                {% partial 'blog' %}
+
+            </div> <!-- Section Body-->
+        </div> <!-- Container-->
+    </section> <!-- /Blog -->
+
+    <!-- Map -->
+    <section class="section section--map" id="contact">
+        <div class="container">
+            <div class="section__header section__header--map">
+                <a href="#" target="_blank" class="map">
+                    <h2 class="section__suptitle section__suptitle--map"><i class="fas fa-map-marker-alt"></i></h2>
+                    <h1 class="section__title section__title--map">Open Map</h1>
+                </a>
+            </div>
+        </div>
+    </section> <!-- /Map -->
+
+</main> <!-- /Main -->

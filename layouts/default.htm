@@ -1,0 +1,44 @@
+description = "Default layout"
+
+[SeoCmsPage]
+
+[formSubscribe]
+urlToUnsubscribe = "unsubscribe"
+urlToProfile = "subscriber-profile"
+geo = "disabled"
+thanksMessage = "Thanks"
+errorMessage = "Вы уже подписаны"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+	<script src="https://kit.fontawesome.com/5bd0bdd82a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    {% styles %}
+    {% component 'SeoCmsPage' %}
+</head>
+<body>
+
+    {% partial 'header' %}
+
+    <!-- Page -->
+    <div class="page" id="page">
+        {% page %}
+    </div>
+
+    {% partial 'footer' %}
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	<!-- App Js -->
+	<script src="{{ 'assets/js/app.js'|theme }}"></script>
+
+    {% framework extras %}
+    {% scripts %}
+
+</body>
+</html>

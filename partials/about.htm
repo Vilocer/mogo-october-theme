@@ -1,0 +1,23 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "about"
+postsPerPage = 3
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "home"
+==
+{% set posts = blogPosts.posts %}
+
+<div class="about">
+    {% for post in posts %}
+        <div class="about__item">
+            <div class="about__image">                    
+                {% for image in post.featured_images|slice(0, 1) %}
+                    <img src="{{ image.path }}" alt="{{ image.title }}">
+                {% endfor %}
+            </div>
+            <div class="about__text"><i class="fas fa-user-friends"></i><br>{{ post.title }}</div>
+        </div>
+    {% endfor %}
+</div>
